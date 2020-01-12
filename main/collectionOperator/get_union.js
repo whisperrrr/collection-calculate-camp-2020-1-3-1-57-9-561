@@ -1,7 +1,8 @@
 'use strict';
 
 function get_union(collection_a, collection_b) {
-  //在这里写入代码
+  let supplement = collection_b.filter(ele => collection_a.indexOf(ele) === -1);
+  return collection_a.concat(supplement);
 }
 
 module.exports = get_union;
