@@ -1,8 +1,14 @@
 'use strict';
 
 function choose_divisible_integer(collection_a, collection_b) {
-
-  //在这里写入代码
+  return collection_a.filter(eleA => {
+    for (let i of collection_b) {
+      if (eleA % i === 0) {
+        return true;
+      }
+    }
+    return false;
+  }) 
 }
 
 module.exports = choose_divisible_integer;
