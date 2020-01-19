@@ -1,5 +1,8 @@
+
+let choose_common_elements = require("../../../main/filter/two_collections_practice_1.js");
+
 function collect_same_elements(collection_a, collection_b) {
-  //在这里写入代码
+  return choose_common_elements(collection_a, collection_b.flat(1));
 }
 
 module.exports = collect_same_elements;
